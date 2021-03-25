@@ -1,0 +1,87 @@
+body {
+  overflow-x: hidden;
+  font-family: "Poopins";
+  height: 100vh;
+  width: 100vw;
+}
+.scrollMenu {
+  position: fixed;
+  overflow: scroll;
+  height: 100vh;
+  width: 19vw;
+}
+#main-doc {
+  display: grid;
+  grid-template-areas: "firstPart secondPart";
+  grid-template-columns: 21vw 1fr;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -0.5%;
+  margin-left: -0.5%;
+}
+#Header1 {
+  margin-left: 5%;
+  font-size: calc(16px + 0.5em);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: absolute;
+  font-size: calc(15px + 0.8em);
+  height: 100vw;
+  line-height: 1.9em;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid #000;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  margin-left: 5%;
+}
+.paragraphs {
+  line-height: 1.6em;
+  font-size: calc(8px + 1em);
+}
+
+#grey {
+  background-color: rgba(128, 128, 128, 0.3);
+  width: 45vw;
+  margin-left: 5vw;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #main-doc {
+    padding: 0;
+    margin-l
+  }
+  .scrollMenu {
+    width: 18vh;
+    font-size: calc(14px + 0.2em);
+    text-align: center;
+    line-height: 8.3vh;
+    padding: 0 0 0 0.8em;
+  }
+  #Header1 {
+    font-size: calc(15px + 0.2em);
+    line-height: 1.4em;
+  }
+  .paragraphs {
+    padding: 0 2.4em;
+    font-size:calc(14px + 0.2em);
+  }
+  #grey {
+    width: 51vw;
+  }
+  .scrollMenu{
+   width:25vw;
+   margin:-2%;
+  }
+}
